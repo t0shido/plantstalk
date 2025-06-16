@@ -1,12 +1,71 @@
-# React + Vite
+# PlantsTalk - Plant Medicine Retreat Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for a plant medicine retreat center built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design that works on mobile and desktop
+- Multi-page layout with React Router
+- Modern UI with smooth animations
+- Contact form with validation
+- Retreat program showcase
+- Team member profiles
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Home**: Overview of the retreat center with key offerings
+- **About**: Information about the center, team, and approach
+- **Retreats**: Detailed information about retreat programs
+- **Contact**: Contact form and information
+
+## Technologies Used
+
+- React 18
+- Vite
+- React Router
+- CSS3 with custom styling
+- Font Awesome for icons
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/plantstalk.git
+   cd plantstalk
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder with optimized production build.
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- Images: Placeholder images to be replaced with actual content
+- Icons: Font Awesome
