@@ -1,0 +1,342 @@
+/* Modern About Page Styling for PlantsTalk */
+
+.about-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: url('../assets/images/about-hero-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+/* Our Story Section */
+.our-story {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.our-story h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.our-story h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-image {
+  position: relative;
+}
+
+.story-image::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-green);
+  top: -20px;
+  left: -20px;
+  border-radius: 10px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(46, 139, 87, 0.15);
+  position: relative;
+}
+
+.story-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Our Team Section */
+.our-team {
+  padding: 100px 20px;
+  background-color: var(--subtle-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.our-team::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236fcf97' opacity='0.1'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+  right: -50px;
+  top: -50px;
+  transform: rotate(45deg);
+}
+
+.our-team h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.our-team h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(46, 139, 87, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(46, 139, 87, 0.2);
+}
+
+.member-image {
+  height: 250px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green), var(--accent-green));
+}
+
+.team-member h3 {
+  font-size: 1.4rem;
+  color: var(--primary-green);
+  margin: 0 20px 5px;
+}
+
+.member-title {
+  color: var(--light-green);
+  font-weight: 600;
+  margin: 0 20px 15px;
+  font-size: 0.9rem;
+}
+
+.team-member p {
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Our Approach Section */
+.our-approach {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.our-approach h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.our-approach h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.approach-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.approach-text h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.approach-text h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+  border-radius: 50%;
+}
+
+.approach-text p {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.approach-image {
+  position: relative;
+}
+
+.approach-image::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-green);
+  top: 20px;
+  right: -20px;
+  border-radius: 10px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .story-content,
+  .approach-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .approach-content {
+    flex-direction: column-reverse;
+  }
+  
+  .story-image,
+  .approach-image {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .our-story h2,
+  .our-team h2,
+  .our-approach h2 {
+    font-size: 2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

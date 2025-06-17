@@ -1,16 +1,21 @@
 import React from 'react';
 import '../styles/About.css';
+import '../styles/ModernAbout.css';
+import '../styles/ModernTheme.css';
+import '../styles/LeafDecorations.css';
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container modern-container">
       <section className="about-hero">
-        <h1>About PlantsTalk</h1>
-        <p>Our journey, philosophy, and commitment to healing</p>
+        <div className="hero-text-container">
+          <h1>About PlantsTalk</h1>
+          <p>Our journey, philosophy, and commitment to healing</p>
+        </div>
       </section>
 
-      <section className="our-story">
-        <h2>Our Story</h2>
+      <section className="our-story modern-section">
+        <h2 className="modern-section-title">Our Story</h2>
         <div className="story-content">
           <div className="story-image">
             {/* Placeholder for founder image */}
@@ -36,10 +41,10 @@ const About = () => {
         </div>
       </section>
 
-      <section className="our-team">
-        <h2>Our Facilitators</h2>
+      <section className="our-team modern-section leaf-bg">
+        <h2 className="modern-section-title">Our Facilitators</h2>
         <div className="team-grid">
-          <div className="team-member">
+          <div className="team-member modern-card">
             <div className="member-image"></div>
             <h3>Elena Rodriguez</h3>
             <p className="member-title">Lead Facilitator & Founder</p>
@@ -48,7 +53,7 @@ const About = () => {
               in transpersonal psychology, Elena creates a container of deep safety and wisdom.
             </p>
           </div>
-          <div className="team-member">
+          <div className="team-member modern-card">
             <div className="member-image"></div>
             <h3>Michael Rainwater</h3>
             <p className="member-title">Integration Specialist</p>
@@ -57,7 +62,7 @@ const About = () => {
               and spiritual emergence, Michael helps participants process and integrate their experiences.
             </p>
           </div>
-          <div className="team-member">
+          <div className="team-member modern-card">
             <div className="member-image"></div>
             <h3>Sophia Chen</h3>
             <p className="member-title">Medicine Woman & Healer</p>
@@ -69,8 +74,8 @@ const About = () => {
         </div>
       </section>
 
-      <section className="our-approach">
-        <h2>Our Approach</h2>
+      <section className="our-approach modern-section">
+        <h2 className="modern-section-title">Our Approach</h2>
         <div className="approach-content">
           <div className="approach-text">
             <h3>Safety First</h3>

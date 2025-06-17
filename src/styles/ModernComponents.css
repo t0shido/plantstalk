@@ -1,0 +1,225 @@
+/* Modern Components CSS - Enhanced styling for PlantsTalk */
+
+/* Newsletter Section Styling */
+.newsletter-section {
+  background: linear-gradient(135deg, var(--subtle-green), var(--light-green));
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff' opacity='0.1'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 100px;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.modern-section-title {
+  margin-bottom: 20px;
+  color: var(--primary-green);
+}
+
+.newsletter-description {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 30px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 1px solid rgba(111, 207, 151, 0.3);
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.05);
+  width: 100%;
+}
+
+.newsletter-input:focus {
+  border-color: var(--accent-green);
+  box-shadow: 0 5px 20px rgba(46, 139, 87, 0.1);
+}
+
+.newsletter-button {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.2);
+  white-space: nowrap;
+}
+
+.newsletter-button:hover {
+  background: var(--accent-green);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.3);
+}
+
+.newsletter-privacy {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* Feature Icons Styling */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(111, 207, 151, 0.2), rgba(143, 209, 79, 0.2));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(46, 139, 87, 0.1);
+}
+
+.feature:hover .feature-icon {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.15);
+  background: linear-gradient(135deg, rgba(111, 207, 151, 0.3), rgba(143, 209, 79, 0.3));
+}
+
+.feature-icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(111, 207, 151, 0.5);
+  top: 0;
+  left: 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.feature-text {
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover .feature-text {
+  color: var(--primary-green);
+}
+
+/* Offering Cards Enhanced Styling */
+.offering-card {
+  transition: all 0.4s ease;
+}
+
+.offering-card:hover {
+  transform: translateY(-10px);
+}
+
+.offering-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.offering-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.8), rgba(143, 209, 79, 0.8));
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.offering-card:hover .offering-image::before {
+  opacity: 0.9;
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.9), rgba(143, 209, 79, 0.9));
+}
+
+.offering-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-green);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* Testimonial Enhanced Styling */
+.testimonial-rating {
+  color: #ffc107; /* Gold star color */
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.testimonial-author::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-green), var(--light-green));
+  transform: translateY(-50%);
+}

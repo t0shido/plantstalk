@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FontLoader from './components/FontLoader';
 
 // Pages
 import Home from './pages/Home';
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <FontLoader />
         <Navbar />
         <main className="main-content">
           <Routes>

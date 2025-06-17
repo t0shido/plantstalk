@@ -1,0 +1,242 @@
+/* Modern Footer Styling for PlantsTalk */
+
+.footer {
+  background: linear-gradient(to bottom, var(--bg-light), #f0f7f0);
+  color: var(--text-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green), var(--accent-green));
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-logo {
+  color: var(--primary-green);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-logo::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -5px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.footer-description {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(111, 207, 151, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-green);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 139, 87, 0.2);
+}
+
+.instagram::before {
+  content: '\f16d';
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.facebook::before {
+  content: '\f39e';
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.youtube::before {
+  content: '\f167';
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.footer-section h4 {
+  color: var(--primary-green);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -5px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-green);
+  padding-left: 20px;
+}
+
+.footer-links a:hover::before {
+  background-color: var(--primary-green);
+  width: 8px;
+  height: 8px;
+}
+
+.contact-info {
+  font-style: normal;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.icon {
+  margin-right: 10px;
+  color: var(--primary-green);
+  font-size: 1.1rem;
+}
+
+.email-icon::before {
+  content: '\f0e0';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.phone-icon::before {
+  content: '\f095';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.location-icon::before {
+  content: '\f3c5';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(111, 207, 151, 0.2);
+  padding: 20px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--primary-green);
+}
+
+/* Leaf decoration in footer */
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236fcf97' opacity='0.05'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+  transform: rotate(45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+  }
+}

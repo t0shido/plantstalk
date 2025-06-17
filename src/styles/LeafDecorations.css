@@ -1,0 +1,100 @@
+/* Leaf Decorations CSS */
+.leaf-decoration {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.leaf-1 {
+  top: 15%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(45deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+.leaf-2 {
+  bottom: 20%;
+  right: 8%;
+  width: 200px;
+  height: 200px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-30deg);
+  animation: float 10s ease-in-out infinite 1s;
+}
+
+.leaf-3 {
+  top: 40%;
+  right: 15%;
+  width: 120px;
+  height: 120px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(15deg);
+  animation: float 7s ease-in-out infinite 0.5s;
+}
+
+/* Section decorations */
+.section-leaf {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.section-leaf-1 {
+  top: 10%;
+  left: -50px;
+  width: 180px;
+  height: 180px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236fcf97'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(120deg);
+}
+
+.section-leaf-2 {
+  bottom: 15%;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236fcf97'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-60deg);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-15px) rotate(45deg); }
+  100% { transform: translateY(0) rotate(45deg); }
+}
+
+.leaf-2 {
+  animation-name: float2;
+}
+
+@keyframes float2 {
+  0% { transform: translateY(0) rotate(-30deg); }
+  50% { transform: translateY(-15px) rotate(-30deg); }
+  100% { transform: translateY(0) rotate(-30deg); }
+}
+
+.leaf-3 {
+  animation-name: float3;
+}
+
+@keyframes float3 {
+  0% { transform: translateY(0) rotate(15deg); }
+  50% { transform: translateY(-10px) rotate(15deg); }
+  100% { transform: translateY(0) rotate(15deg); }
+}

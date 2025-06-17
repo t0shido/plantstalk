@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import '../styles/ModernContact.css';
+import '../styles/ModernTheme.css';
+import '../styles/LeafDecorations.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,15 +45,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container modern-container">
       <section className="contact-hero">
-        <h1>Contact Us</h1>
-        <p>Reach out with questions or to begin your healing journey</p>
+        <div className="hero-text-container">
+          <h1>Contact Us</h1>
+          <p>Reach out with questions or to begin your healing journey</p>
+        </div>
       </section>
 
       <section className="contact-content">
         <div className="contact-info">
-          <h2>Get in Touch</h2>
+          <h2 className="modern-section-title">Get in Touch</h2>
           <p>
             We're here to answer any questions you may have about our retreats, 
             plant medicines, or healing practices. Feel free to reach out through 
@@ -90,12 +95,12 @@ const Contact = () => {
               Not sure which retreat is right for you? Schedule a free 30-minute 
               consultation with one of our facilitators to discuss your healing journey.
             </p>
-            <button className="consultation-button">Book Consultation</button>
+            <button className="consultation-button modern-button">Book Consultation</button>
           </div>
         </div>
         
         <div className="contact-form-container">
-          <h2>Send a Message</h2>
+          <h2 className="modern-section-title">Send a Message</h2>
           {formSubmitted ? (
             <div className="form-success-message">
               <p>Thank you for reaching out! We'll get back to you within 48 hours.</p>
@@ -166,7 +171,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               
-              <button type="submit" className="submit-button">Send Message</button>
+              <button type="submit" className="submit-button modern-button">Send Message</button>
             </form>
           )}
         </div>

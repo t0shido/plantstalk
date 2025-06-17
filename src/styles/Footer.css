@@ -6,9 +6,8 @@
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -16,6 +15,11 @@
 
 .footer-section {
   margin-bottom: 20px;
+}
+
+.footer-main-section {
+  max-width: 600px;
+  text-align: left;
 }
 
 .footer-logo {

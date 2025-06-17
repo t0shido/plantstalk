@@ -1,0 +1,341 @@
+/* Modern Retreats Page Styling for PlantsTalk */
+
+.retreats-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.retreats-hero {
+  background: url('../assets/images/retreats-hero-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.retreats-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.retreats-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.retreats-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+/* Retreat Intro */
+.retreat-intro {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.retreat-intro p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.retreat-intro::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Retreat Programs */
+.retreat-programs {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.retreat-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(46, 139, 87, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.retreat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(46, 139, 87, 0.15);
+}
+
+.retreat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-green), var(--light-green));
+  border-radius: 5px 0 0 5px;
+}
+
+.retreat-image {
+  height: 100%;
+  min-height: 300px;
+  background-color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.retreat-content {
+  padding: 40px;
+}
+
+.retreat-content h2 {
+  color: var(--primary-green);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.retreat-content h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.retreat-duration {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(111, 207, 151, 0.2), rgba(143, 209, 79, 0.2));
+  color: var(--primary-green);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.retreat-description {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.retreat-content h3 {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  margin: 25px 0 15px;
+}
+
+.retreat-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.retreat-content li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.retreat-content li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--light-green);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.retreat-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin: 25px 0;
+}
+
+.retreat-button {
+  background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.2);
+}
+
+.retreat-button:hover {
+  background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(46, 139, 87, 0.3);
+}
+
+/* FAQ Section */
+.retreat-faq {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--subtle-green);
+  border-radius: 20px;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.retreat-faq::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236fcf97' opacity='0.1'%3E%3Cpath d='M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20a4.67,4.67,0,0,0,4.2-6.75,9.25,9.25,0,0,0,8.05-3.84C19.62,7.7,17,8,17,8Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+  right: -100px;
+  bottom: -100px;
+  transform: rotate(-30deg);
+}
+
+.retreat-faq h2 {
+  font-size: 2.2rem;
+  color: var(--primary-green);
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.retreat-faq h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(46, 139, 87, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(46, 139, 87, 0.12);
+}
+
+.faq-item h3 {
+  color: var(--primary-green);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.faq-item h3::before {
+  content: '?';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.faq-item p {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .retreat-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .retreat-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .retreats-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .retreat-faq h2 {
+    font-size: 1.8rem;
+  }
+  
+  .retreat-content {
+    padding: 30px 20px;
+  }
+}

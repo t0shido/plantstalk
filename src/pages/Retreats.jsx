@@ -1,15 +1,20 @@
 import React from 'react';
 import '../styles/Retreats.css';
+import '../styles/ModernRetreats.css';
+import '../styles/ModernTheme.css';
+import '../styles/LeafDecorations.css';
 
 const Retreats = () => {
   return (
-    <div className="retreats-container">
+    <div className="retreats-container modern-container">
       <section className="retreats-hero">
-        <h1>Our Retreat Programs</h1>
-        <p>Transformative experiences for healing and growth</p>
+        <div className="hero-text-container">
+          <h1>Our Retreat Programs</h1>
+          <p>Transformative experiences for healing and growth</p>
+        </div>
       </section>
 
-      <section className="retreat-intro">
+      <section className="retreat-intro modern-section">
         <p>
           Our plant medicine retreats are carefully designed to provide profound healing 
           experiences in a safe, supportive environment. Each retreat includes preparation 
@@ -17,7 +22,7 @@ const Retreats = () => {
         </p>
       </section>
 
-      <section className="retreat-programs">
+      <section className="retreat-programs modern-section">
         <div className="retreat-card">
           <div className="retreat-image"></div>
           <div className="retreat-content">
@@ -89,13 +94,13 @@ const Retreats = () => {
               <li>3 months integration support</li>
             </ul>
             <p className="retreat-price">Starting at $5,500</p>
-            <button className="retreat-button">Inquire Now</button>
+            <button className="retreat-button modern-button">Inquire Now</button>
           </div>
         </div>
       </section>
 
-      <section className="retreat-faq">
-        <h2>Frequently Asked Questions</h2>
+      <section className="retreat-faq modern-section leaf-bg">
+        <h2 className="modern-section-title">Frequently Asked Questions</h2>
         <div className="faq-item">
           <h3>Is plant medicine right for me?</h3>
           <p>
